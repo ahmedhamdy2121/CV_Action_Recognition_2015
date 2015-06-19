@@ -1,0 +1,14 @@
+Display the "skeletal_data.mat" in any dataset
+> x = skeletal_data(:,:,1)
+> xval = cell2mat(x)
+> [xval(:).subject]
+
+-------------------------------------------------------------------------------------------------------------------------------
+In the folder "data", you will find "show_skeletons.m" this will show an animation of all the action in the dataset
+
+-------------------------------------------------------------------------------------------------------------------------------
+I commented the print line in "svmpredict_lib.c" line 223
+
+-------------------------------------------------------------------------------------------------------------------------------
+14,292,180 locations * 8 (double)
+114,337,440 Byte = 110 MB
