@@ -23,3 +23,6 @@
 
 # Debug files
 *.dSYM/
+
+# Directories
+*_experiments/
