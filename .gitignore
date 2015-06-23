@@ -24,5 +24,8 @@
 # Debug files
 *.dSYM/
 
+# Auto Save
+*.asv
+
 # Directories
 *_experiments/

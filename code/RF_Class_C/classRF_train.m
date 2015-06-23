@@ -92,7 +92,7 @@
 
 function model=classRF_train(X,Y,ntree,mtry, extra_options)
     DEFAULTS_ON =0;
-    %DEBUG_ON=0;
+    DEBUG_ON=0;
 
     TRUE=1;
     FALSE=0;
@@ -176,7 +176,7 @@ function model=classRF_train(X,Y,ntree,mtry, extra_options)
     
     mtry = max(1,min(D,round(mtry)));
     
-    if DEFAULTS_ON
+    if DEFAULTS_ON && DEBUG_ON
         fprintf('\tSetting to defaults %d trees and mtry=%d\n',ntree,mtry);
     end
     

@@ -207,7 +207,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
     plhs[0] = mxCreateDoubleScalar(nrnodes);
     plhs[1] = mxCreateDoubleScalar(ntree);
 
-    mexPrintf("\n");
+    //mexPrintf("\n");
     classRF(x, dimx, y, &nclass, cat, &maxcat,
 	     sampsize, strata, Options, &ntree, &mtry,&ipi, 
          classwt, cutoff, &nodesize,outcl, counttr, prox,

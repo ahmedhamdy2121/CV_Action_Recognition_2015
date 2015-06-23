@@ -19,6 +19,7 @@ function [] = skeletal_action_classification(dataset_idx, feature_idx)
         error('Dataset index should be less than 3');
     end
 
+    disp (['########### Running: ' feature_types{feature_idx} ' ###########'])
     
     % All the action sequences in a dataset are interpolated to have same
     % length. 'desired_frames' is the reference length.
