@@ -71,6 +71,7 @@ function [] = perform_classification(root_dir, subject_labels, action_labels,...
     
     disp ('Accuracy per action: ')
     action_names = {'walk', 'sit down', 'stand up', 'pick up', 'carry', 'throw', 'push', 'pull', 'wave hands', 'clap hands'};
+    
     for j = 1:n_classes
         disp ([action_names{j} ' >> ' num2str(total_accuracy(j))])
     end
