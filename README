@@ -17,6 +17,8 @@ Difference from 32 to 64:
 2. svm folder
 3. RF folder
 
+You can use the parallel version just by enabling matlab workers (parallel) like I did in the script "parallel_script"
+
 Experimental setting:
 Cross-subject - half of the subjects used for training and the remaining half used for testing.
 Results are averaged over 10 different training and test subject combinations.
