@@ -26,8 +26,9 @@ function [] = perform_classification(root_dir, subject_labels, action_labels,...
     cw_accuracy = zeros(n_tr_te_splits, n_classes);
     
     confusion_matrices = cell(n_tr_te_splits, 1);
-        
-    for i = 1:n_tr_te_splits         
+    
+    % parallel
+    parfor i = 1:n_tr_te_splits         
         tr_subject_ind = ismember(subject_labels, tr_subjects(i,:));
         te_subject_ind = ismember(subject_labels, te_subjects(i,:));        
         tr_labels = action_labels(tr_subject_ind);

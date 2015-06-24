@@ -65,7 +65,8 @@ function [] = skeletal_action_classification(dataset_idx, feature_idx)
     
     %disp ('No, will use previous Temporal Modeling...')
     %%{
-    for tr_split = 1:n_tr_te_splits
+    % parallel
+    parfor tr_split = 1:n_tr_te_splits
         for tr_action = 1:n_actions
             % DTW
             loadname = [directory, '/features'];

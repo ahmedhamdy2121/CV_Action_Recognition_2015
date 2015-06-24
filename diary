@@ -4734,3 +4734,22 @@ pull >> 0.95
 wave hands >> 0.952
 clap hands >> 0.956
 Elapsed time is 511.050153 seconds.
+########### Running: absolute_joint_positions ###########
+Generating skeletal representation
+Temporal modeling
+Classification
+Number of persons: 10
+Number of actions: 9
+Results:
+Total Accuracy: 0.72494
+Accuracy per action: 
+walk >> 0.70363
+sit down >> 0.74407
+stand up >> 0.71534
+pick up >> 0.714
+carry >> 0.67567
+throw >> 0.75263
+push >> 0.73449
+pull >> 0.76209
+wave hands >> 0.70166
+Elapsed time is 198.252728 seconds.
