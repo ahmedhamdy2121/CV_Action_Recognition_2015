@@ -12,6 +12,10 @@ This code has been tested on a 64-bit Linux(Ubuntu 12.04) machine using MATLAB-R
 If you are planning to run it on a Windows machine, make sure that you mex the 'dpcore.c' file in the folder "Code/DTW".
 If you are running on windows 32 bits, then make the libsvm "read the README file in Code/libsvm-3.12/matlab"
 
+Difference from 32 to 64:
+1. DTW folder
+2. svm folder
+3. RF folder
 
 Experimental setting:
 Cross-subject - half of the subjects used for training and the remaining half used for testing.
