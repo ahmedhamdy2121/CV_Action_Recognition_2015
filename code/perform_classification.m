@@ -71,7 +71,14 @@ function [] = perform_classification(root_dir, subject_labels, action_labels,...
     disp (['Total Accuracy: ' num2str(avg_total_accuracy)])
     
     disp ('Accuracy per action: ')
-    action_names = {'walk', 'sit down', 'stand up', 'pick up', 'carry', 'throw', 'push', 'pull', 'wave hands', 'clap hands'};
+    
+    if n_classes == 10
+        %% for UTKinect
+        action_names = {'walk', 'sit down', 'stand up', 'pick up', 'carry', 'throw', 'push', 'pull', 'wave hands', 'clap hands'};
+    elseif n_classes == 9
+        %% for Florence 3D
+        action_names = {'wave', 'drink from bottle', 'answer phone', 'clap', 'tight lace', 'sit down', 'stand up', 'read watch', 'bow'};
+    end
     
     for j = 1:n_classes
         disp ([action_names{j} ' >> ' num2str(total_accuracy(j))])
