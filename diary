@@ -4753,3 +4753,38 @@ push >> 0.73449
 pull >> 0.76209
 wave hands >> 0.70166
 Elapsed time is 198.252728 seconds.
+########### Running: absolute_joint_positions ###########
+[Warning: Directory already exists.] 
+[> In <a href="matlab: opentoline('C:\Users\ahmed\Documents\GitHub\CV_Action_Recognition_2015\skeletal_action_classification.m',41,1)">skeletal_action_classification at 41</a>
+  In <a href="matlab: opentoline('C:\Users\ahmed\Documents\GitHub\CV_Action_Recognition_2015\run.m',5,1)">run at 5</a>] 
+Generating skeletal representation
+Temporal modeling
+[Warning: Directory already exists.] 
+[> In <a href="matlab: opentoline('C:\Users\ahmed\Documents\GitHub\CV_Action_Recognition_2015\skeletal_action_classification.m',62,1)">skeletal_action_classification at 62</a>
+  In <a href="matlab: opentoline('C:\Users\ahmed\Documents\GitHub\CV_Action_Recognition_2015\run.m',5,1)">run at 5</a>] 
+[Warning: Directory already exists.] 
+[> In <a href="matlab: opentoline('C:\Users\ahmed\Documents\GitHub\CV_Action_Recognition_2015\skeletal_action_classification.m',63,1)">skeletal_action_classification at 63</a>
+  In <a href="matlab: opentoline('C:\Users\ahmed\Documents\GitHub\CV_Action_Recognition_2015\run.m',5,1)">run at 5</a>] 
+[Warning: Directory already exists.] 
+[> In <a href="matlab: opentoline('C:\Users\ahmed\Documents\GitHub\CV_Action_Recognition_2015\skeletal_action_classification.m',64,1)">skeletal_action_classification at 64</a>
+  In <a href="matlab: opentoline('C:\Users\ahmed\Documents\GitHub\CV_Action_Recognition_2015\run.m',5,1)">run at 5</a>] 
+Classification
+[Warning: Directory already exists.] 
+[> In <a href="matlab: opentoline('C:\Users\ahmed\Documents\GitHub\CV_Action_Recognition_2015\code\perform_classification.m',5,1)">perform_classification at 5</a>
+  In <a href="matlab: opentoline('C:\Users\ahmed\Documents\GitHub\CV_Action_Recognition_2015\skeletal_action_classification.m',109,1)">skeletal_action_classification at 109</a>
+  In <a href="matlab: opentoline('C:\Users\ahmed\Documents\GitHub\CV_Action_Recognition_2015\run.m',5,1)">run at 5</a>] 
+Number of persons: 10
+Number of actions: 9
+Results:
+Total Accuracy: 0.72479
+Accuracy per action: 
+walk >> 0.70058
+sit down >> 0.74407
+stand up >> 0.71399
+pick up >> 0.71462
+carry >> 0.67397
+throw >> 0.75263
+push >> 0.73525
+pull >> 0.76587
+wave hands >> 0.70121
+Elapsed time is 173.742667 seconds.
