@@ -28,7 +28,7 @@ function [] = perform_classification(root_dir, subject_labels, action_labels,...
     confusion_matrices = cell(n_tr_te_splits, 1);
     
     % parallel
-    parfor i = 1:n_tr_te_splits         
+    parfor i = 1:n_tr_te_splits  
         tr_subject_ind = ismember(subject_labels, tr_subjects(i,:));
         te_subject_ind = ismember(subject_labels, te_subjects(i,:));        
         tr_labels = action_labels(tr_subject_ind);
@@ -48,6 +48,9 @@ function [] = perform_classification(root_dir, subject_labels, action_labels,...
         end
 
         % I will change this line here only
+        % kernel_svm_one_vs_all_modified
+        % kernel_RF_modified
+        % kernel_RF_one_vs_all_modified
         [total_accuracy(i), cw_accuracy(i,:), confusion_matrices{i}] =...
             kernel_RF_modified(K_train_train,...
             K_test_train, tr_labels, te_labels, C_val);
@@ -70,6 +73,7 @@ function [] = perform_classification(root_dir, subject_labels, action_labels,...
     disp ('Results:')
     disp (['Total Accuracy: ' num2str(avg_total_accuracy)])
     
+    %{
     disp ('Accuracy per action: ')
     
     if n_classes == 10
@@ -83,5 +87,5 @@ function [] = perform_classification(root_dir, subject_labels, action_labels,...
     for j = 1:n_classes
         disp ([action_names{j} ' >> ' num2str(total_accuracy(j))])
     end
-    
+    %}
 end

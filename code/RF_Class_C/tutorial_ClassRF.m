@@ -198,7 +198,7 @@ Y_tst = Y(randvector(251:end));
     Y_hat = classRF_predict(X_tst,model);
     fprintf('\nexample 14: error rate %f\n',   length(find(Y_hat~=Y_tst))/length(Y_tst));
 
-% example 14: to see what is going on behind the scenes    
+% example 15: to see what is going on behind the scenes    
 %  extra_options.keep_inbag Should an n by ntree matrix be returned that keeps track of which samples are
 %                   'in-bag' in which trees (but not how many times, if sampling with replacement)
 %

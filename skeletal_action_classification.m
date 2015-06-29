@@ -49,8 +49,8 @@ function [] = skeletal_action_classification(dataset_idx, feature_idx)
     %% Skeletal representation
     disp ('Generating skeletal representation')
     
-    %disp ('No, will use previous Skeletal Representation')
-    generate_features(directory, datasets{dataset_idx}, feature_types{feature_idx}, desired_frames);
+    disp ('No, will use previous Skeletal Representation')
+    %generate_features(directory, datasets{dataset_idx}, feature_types{feature_idx}, desired_frames);
 
     %% Temporal modeling
     disp ('Temporal modeling')
@@ -63,8 +63,8 @@ function [] = skeletal_action_classification(dataset_idx, feature_idx)
     mkdir([directory, '/dtw_warped_fourier_features']);
     mkdir([directory, '/dtw_warped_pyramid_lf_fourier_kernels']);                
     
-    %disp ('No, will use previous Temporal Modeling...')
-    %%{
+    disp ('No, will use previous Temporal Modeling...')
+    %{
     % parallel
     parfor tr_split = 1:n_tr_te_splits
         for tr_action = 1:n_actions
@@ -102,7 +102,7 @@ function [] = skeletal_action_classification(dataset_idx, feature_idx)
             compute_kernels(data.pyramid_lf_fourier_features, savename);
         end
     end
-    %%}
+    %}
     
     %% Classification
     disp ('Classification')

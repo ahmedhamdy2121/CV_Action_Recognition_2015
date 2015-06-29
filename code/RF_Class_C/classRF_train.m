@@ -20,7 +20,7 @@
 % ntree (optional): number of trees (default is 500). also if set to 0
 %           will default to 500
 % mtry (default is floor(sqrt(size(X,2))) D=number of features in X). also if set to 0
-%           will default to 500
+%           will default to floor(sqrt(size(X,2))
 %
 %
 % Note: TRUE = 1 and FALSE = 0 below
