@@ -2,7 +2,7 @@
 
 My additions to the paper can be found on the report below.
 
-Report: https://1drv.ms/b/s!AjpxhCM4OMFHg_AOZkj75ky1ubXCjQ?e=dxQhbb
+Report: https://1drv.ms/b/s!AjpxhCM4OMFHg_AOZkj75ky1ubXCjQ
 
 Please cite the following paper if you use this code or data.
 
