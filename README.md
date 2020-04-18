@@ -1,10 +1,12 @@
 ## Human Action Recognition by Representing 3D Skeletons as Points in a Lie
 
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/ahmedhamdy90/deep-learning-specialization-coursera/blob/master/LICENSE)
+
 My additions to the paper can be found on the report below.
 
 Report: https://1drv.ms/b/s!AjpxhCM4OMFHg_AOZkj75ky1ubXCjQ
 
-Please cite the following paper if you use this code or data.
+Please cite the following paper if you use this code or data, and also mention me in your work.
 
 ************************************************************************************
 
